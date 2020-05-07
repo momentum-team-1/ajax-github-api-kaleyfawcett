@@ -51,7 +51,7 @@ fetch('https://api.github.com/users/kaleyfawcett')
     .then (function (website) {
 
         let websiteElement = document.createElement ('div')
-        websiteElement.innerHTML = website.blog
+        websiteElement.innerHTML = `Website: ${website.blog}`
         dataSection.appendChild(websiteElement)
         return website.url
     })
